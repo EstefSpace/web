@@ -1,0 +1,73 @@
+---
+import BodySimple from "../layouts/BodySimple.astro"
+---
+
+<BodySimple title="Descubre más de estefan | estefdev.xyz" icon="../../public/favicon.png">
+	<style>
+
+		
+
+		.content {
+			
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			background: url("https://i.pinimg.com/736x/4b/fd/bc/4bfdbcb96f17d85ff74f523870d1c8fe.jpg");
+   			background-size: cover;
+   			background-repeat: no-repeat;
+			
+		}
+
+		a {
+    background: linear-gradient(to left, #191c90, #191c60);
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    color: white;
+    border: transparent;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    background: linear-gradient(to right, #191c90, aqua);
+    color: #191c32;
+}
+		.hero {
+			
+			align-self: center;
+			width: 50%;
+			font-size: 1em;
+			text-align: center;
+			padding: 10px;
+			background: linear-gradient(135deg, rgba(71, 187, 215, 0.1), rgba(81, 157, 228, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+		
+		}
+
+		
+		span {
+			color: aqua;
+		}
+
+		
+
+	</style>
+<div class="content">
+
+<div class="hero">
+	
+	<h1>Hola, soy un <span>programador junior</span>.</h1>
+	<a href="/card">Ve mi tarjeta personalizada</a>
+</div><br>
+
+</div>
+</BodySimple>

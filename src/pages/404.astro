@@ -1,0 +1,69 @@
+---
+import Body from "../layouts/Body.astro";
+
+---
+
+<Body title="404 Pagina no encontrada | estefdev.xyz" icon="../../public/errorEmoji.png">
+<style>
+
+
+    body {
+        background: linear-gradient(#141625, #191c32);
+            color: white;
+            font-family: 'Trebuchet MS';
+    }
+
+    .content {
+        
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .error404 {
+        margin: 15px;
+        text-align: center;
+        align-self: center;
+    }
+    
+    p {
+        font-weight: 800;
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 3.5em;
+
+    }
+
+    a {
+        background: linear-gradient(to left, #191c90, #191c60);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    color: white;
+    border: transparent;
+    font-weight: 700;
+    text-decoration: none;
+    }
+
+    a:hover {
+    background: linear-gradient(to right, #191c90, aqua);
+    color: #191c32;
+}
+</style>
+    <div class="content">
+       <div class="error404">
+        <img src="../../public/errorEmoji.png" alt="error image">
+        <h1 style="color: yellow;">¡Upss.. Error 404!</h1>
+        <p>Comprueba que escribiste bien la direccion de la pagina.</p>
+        <a href="/">Volver a la pagina principal</a>
+       </div>
+    </div>
+
+    
+</Body>

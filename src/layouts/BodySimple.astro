@@ -1,0 +1,42 @@
+---
+const { title, icon } = Astro.props
+import Footer from "../components/Footer.astro"
+import Navbar from "../components/Navbar.astro"
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href={icon}>
+    <title>{title}</title>
+</head>
+<body>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #11131e;
+            color: white;
+            font-family: 'Trebuchet MS';
+        }
+
+       
+
+      
+    </style>
+
+<Navbar />
+
+    <slot />
+
+
+    <Footer />
+</body>
+</html>
